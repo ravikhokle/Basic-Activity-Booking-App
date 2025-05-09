@@ -2,10 +2,10 @@ import express from 'express';
 import dotenv from 'dotenv';
 import userRoutes from './routes/userRoutes.js';
 import activityRoutes from "./routes/activityRoutes.js";
-import dbConnect from './config/dbConnect.js';
+import DBConnect from './config/DBConnect.js';
 dotenv.config();
 
-dbConnect();
+DBConnect();
 
 const app = express();  
 app.use(express.json());
