@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "0a84df5a-262b-4f39-afc3-cbedb0015ea9",
+		"name": "Basic Activity Booking App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34652756"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Ravi Khokle\",\r\n  \"email\": \"ravikhokle1@gamil.com\",\r\n  \"password\": \"Ravi@123\",\r\n  \"number\": \"7218014410\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}api/user/register",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"ravikhokle1@gamil.com\",\r\n    \"password\":\"Ravi@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}api/user/login",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Activity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activityId\": \"1\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}api/activities/book",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"activities",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Activities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}api/activities/list",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"activities",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Bookings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}api/user/bookings",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"user",
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWUwNzhmOTJiYzM4YTg5NDljZGViZiIsImlhdCI6MTc0Njc5ODUxMSwiZXhwIjoxNzQ2ODM0NTExfQ.T0_zACGojnWVAqDi8L5Xf5yxrjpIh-L4eEZCbLEz8f0",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:5000/",
+			"type": "string"
+		}
+	]
+}
