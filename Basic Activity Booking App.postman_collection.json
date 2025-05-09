@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"name\": \"Ravi Khokle\",\r\n  \"email\": \"ravikhokle1@gamil.com\",\r\n  \"password\": \"Ravi@123\",\r\n  \"number\": \"7218014410\"\r\n}\r\n",
+					"raw": "{\r\n  \"name\": \"Ravi Khokle\",\r\n  \"email\": \"your@gamil.com\",\r\n  \"password\": \"your@123\",\r\n  \"number\": \"7218014410\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
