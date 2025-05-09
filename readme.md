@@ -3,11 +3,11 @@
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/ravikhokle/basic-activity-booking-app.git
+    git clone https://github.com/ravikhokle/Basic-Activity-Booking-App.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd basic-activity-booking-app
+    cd Basic-Activity-Booking-App
     ```
 3. Install dependencies:
     ```bash
@@ -26,5 +26,5 @@
     npm start
     ```
 
-Open your browser and navigate to `http://localhost:3000` or added host in .env.
+Open your browser and navigate to `http://localhost:5000` 
 
